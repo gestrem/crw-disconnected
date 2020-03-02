@@ -59,7 +59,7 @@ Add it to your PATH
 
     export PATH="$HOME/crwctl/bin":$PATH"
 
-Make sure you are logged into OpenShift
+Make sure you are logged in OpenShift
 
     oc login -u my_user -p password https://api_hostname:6443 
 
@@ -67,7 +67,7 @@ Run the following crwctl command
 
     crwctl server:start   --che-operator-image=image-registry.openshift-image-registry.svc:5000/openshift/server-operator-rhel8:2.0   --che-operator-cr-yaml=org_v1_che_cr.yaml
 
-
+[logo] https://github.com/gestrem/crw-disconnected/blob/master/Screen%20Shot%202020-03-02%20at%2016.02.20.png
 
 More info about CodeReady Workspaces Disconnected can be found here : https://access.redhat.com/documentation/en-us/red_hat_codeready_workspaces/2.0/html/installation_guide/installing-codeready-workspaces-in-a-restricted-environment
 
