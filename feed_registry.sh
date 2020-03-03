@@ -14,13 +14,13 @@ crw_images="
 "
 for image in $crw_images; do
 
-sudo skopeo copy --dest-tls-verify=false   --src-creds $RH-TOKEN --dest-creds $OCP_TOKEN docker://$UPSTREAM/codeready-workspaces/$image docker://$OCP_REGISTRY/openshift/$image
+sudo skopeo copy --dest-tls-verify=false   --src-creds $RH_TOKEN --dest-creds $OCP_TOKEN docker://$UPSTREAM/codeready-workspaces/$image docker://$OCP_REGISTRY/openshift/$image
    
 done
 
 
-sudo skopeo copy --dest-tls-verify=false   --src-creds $RH-TOKEN   --dest-creds $OCP_TOKEN docker://$UPSTREAM/rhscl/postgresql-96-rhel7:1-47 docker://$OCP_REGISTRY/openshift/postgresql-96-rhel7:1-47
+sudo skopeo copy --dest-tls-verify=false   --src-creds $RH_TOKEN   --dest-creds $OCP_TOKEN docker://$UPSTREAM/rhscl/postgresql-96-rhel7:1-47 docker://$OCP_REGISTRY/openshift/postgresql-96-rhel7:1-47
 
-sudo skopeo copy --dest-tls-verify=false   --src-creds $RH-TOKEN   --dest-creds $OCP_TOKEN docker://$UPSTREAM/redhat-sso-7/sso73-openshift:1.0-15 docker://$OCP_REGISTRY/openshift/sso73-openshift:1.0-15
+sudo skopeo copy --dest-tls-verify=false   --src-creds $RH_TOKEN   --dest-creds $OCP_TOKEN docker://$UPSTREAM/redhat-sso-7/sso73-openshift:1.0-15 docker://$OCP_REGISTRY/openshift/sso73-openshift:1.0-15
 
-sudo skopeo copy --dest-tls-verify=false   --src-creds $RH-TOKEN  --dest-creds $OCP_TOKEN docker://$UPSTREAM/ubi8-minimal:8.0-213 docker://$OCP_REGISTRY/openshift/ubi8-minimal:8.0-213
+sudo skopeo copy --dest-tls-verify=false   --src-creds $RH_TOKEN  --dest-creds $OCP_TOKEN docker://$UPSTREAM/ubi8-minimal:8.0-213 docker://$OCP_REGISTRY/openshift/ubi8-minimal:8.0-213
