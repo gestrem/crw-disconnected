@@ -1,10 +1,10 @@
 # Install CodeReady Workspaces in disconnected environment
 
-This tutorial shows the whole procedure to install a CodeReady Workspaces 2.0 
+This tutorial shows the whole procedure to install a CodeReady Workspaces 2.0 in a disconnected environment.
 
 ## Prerequisites:
 
-1. OC CLI : https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/)
+1. OC CLI : https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/
 2. Skopeo : https://github.com/nmasse-itix/OpenShift-Examples/tree/master/Using-Skopeo
 
 
@@ -67,7 +67,7 @@ Run the following crwctl command
 
     crwctl server:start   --che-operator-image=image-registry.openshift-image-registry.svc:5000/openshift/server-operator-rhel8:2.0   --che-operator-cr-yaml=org_v1_che_cr.yaml
 
-[logo]: https://github.com/gestrem/crw-disconnected/blob/master/crw_installation.png
+![logo](images/crw_installation.png)
 
 More info about CodeReady Workspaces Disconnected can be found here : https://access.redhat.com/documentation/en-us/red_hat_codeready_workspaces/2.0/html/installation_guide/installing-codeready-workspaces-in-a-restricted-environment
 
