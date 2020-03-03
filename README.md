@@ -44,8 +44,10 @@ Run the script feed_registry.sh
 ## Run CodeReady Workspaces installation
 
 Download CodeReady Workspaces CLI to run the disconnected installation from your laptop:
+All CLI are available here : https://developers.redhat.com/products/codeready-workspaces/download
+Download the CLI for MacOS:
 
-    curl https://developers.redhat.com/products/codeready-workspaces/download --output crw.tar.gz
+    curl https://developers.redhat.com/download-manager/file/codeready-workspaces-2.0.0-crwctl-darwin-x64.tar.gz --output crw.tar.gz
 
 Uncompress it 
 
